@@ -118,20 +118,23 @@ namespace LinqExercise
         #region CreateEmployeesMethod
         private static List<Employee> CreateEmployees()
         {
-            List<Employee> employees = new List<Employee>();
-            employees.Add(new Employee("Cruz", "Sanchez", 25, 10));
-            employees.Add(new Employee("Steven", "Bustamento", 56, 5));
-            employees.Add(new Employee("Micheal", "Doyle", 36, 8));
-            employees.Add(new Employee("Daniel", "Walsh", 72, 22));
-            employees.Add(new Employee("Jill", "Valentine", 32, 43));
-            employees.Add(new Employee("Yusuke", "Urameshi", 14, 1));
-            employees.Add(new Employee("Big", "Boss", 23, 14));
-            employees.Add(new Employee("Solid", "Snake", 18, 3));
-            employees.Add(new Employee("Chris", "Redfield", 44, 7));
-            employees.Add(new Employee("Faye", "Valentine", 32, 10));
+            List<Employee> employees = new List<Employee>
+            {
+                new Employee("Cruz", "Sanchez", 25, 10),
+                new Employee("Steven", "Bustamento", 56, 5),
+                new Employee("Micheal", "Doyle", 36, 8),
+                new Employee("Daniel", "Walsh", 72, 22),
+                new Employee("Jill", "Valentine", 32, 43),
+                new Employee("Yusuke", "Urameshi", 14, 1),
+                new Employee("Big", "Boss", 23, 14),
+                new Employee("Solid", "Snake", 18, 3),
+                new Employee("Chris", "Redfield", 44, 7),
+                new Employee("Faye", "Valentine", 32, 10)
+            };
 
             return employees;
         }
+
         #endregion
     }
 }
